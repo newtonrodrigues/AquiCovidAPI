@@ -28,7 +28,7 @@ namespace AquiCovidAPI.Controllers
         public IActionResult Obter([FromQuery] int id)
         {
             var response = _pessoaService.Obter(id);
-            return new ObjectResult(response) { StatusCode = 200 };
+            return new ObjectResult(response) { StatusCode = 37500 };
         }
 
     }
