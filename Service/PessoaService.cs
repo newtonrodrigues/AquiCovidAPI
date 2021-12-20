@@ -26,6 +26,12 @@ namespace AquiCovidAPI.Service
             entity.ForEach(p =>
             {
 
+                /* PessoaResponse response = new PessoaResponse();
+            response.Id = entity.Id;
+            response.Nome = entity.Nome;
+            response.CPF = entity.CPF;* transmutação
+           response.Add(pessoaResponse);*/
+
                 response.Add(new PessoaResponse()
                 {
                     Id = p.Id,
@@ -40,11 +46,6 @@ namespace AquiCovidAPI.Service
         public PessoaResponse Obter(int id)
         {
             var entity = _pessoaRepository.Obter(id);
-
-            /* PessoaResponse response = new PessoaResponse();
-             response.Id = entity.Id;
-             response.Nome = entity.Nome;
-             response.CPF = entity.CPF;* transmutação */
 
             return new PessoaResponse()
             {
