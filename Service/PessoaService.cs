@@ -55,6 +55,67 @@ namespace AquiCovidAPI.Service
             };
 
         }
+
+        public BaseResponse Inserir(PessoaRequest request)
+        {
+            if (request.Nome == "")
+                return new BaseResponse() { StatusCode = 400, Mensagem = "Nome precisa ser preenchido"};
+
+            if (request.CPF == "")
+                return new BaseResponse() { StatusCode = 400, Mensagem = "CPF precisa ser preenchido" };
+
+            var entidade = _pessoaRepository.ObterPorCpf(request.CPF);
+
+            if(entidade != null)
+                return new BaseResponse() { StatusCode = 400, Mensagem = "CPF já cadastrado" };
+
+           
+            Pessoa pessoa = new Pessoa();
+            pessoa.CPF = request.CPF;
+            pessoa.Id = request.Id;
+            pessoa.Nome = request.Nome;
+
+            _pessoaRepository.Inserir(pessoa);
+
+            return new BaseResponse() { StatusCode = 201, Mensagem = "Pessoa inserida no sistema" };
+
+        }
+
+        public BaseResponse Atualizar( PessoaRequest request)
+        {
+            if (request.Nome == "")
+                return new BaseResponse() { StatusCode = 400, Mensagem = "Nome precisa ser preenchido" };
+
+            if (request.CPF == "")
+                return new BaseResponse() { StatusCode = 400, Mensagem = "CPF precisa ser preenchido" };
+
+            var entidade = _pessoaRepository.ObterPorCpf(request.CPF);
+
+            if (entidade != null)
+            {
+               if (entidade.Id != request.Id )
+                    return new BaseResponse() { StatusCode = 400, Mensagem = "CPF já cadastrado" };
+            }
+
+            Pessoa pessoa = new Pessoa();
+            pessoa.CPF = request.CPF;
+            pessoa.Id = request.Id;
+            pessoa.Nome = request.Nome;
+
+            _pessoaRepository.Atualizar(pessoa);
+
+            return new BaseResponse() { StatusCode = 200, Mensagem = "Pessoa atualizada no sistema" };
+
+         }
+
+        public BaseResponse Deletar(int id)
+        {
+            if (id == 0)
+                return new BaseResponse() { StatusCode = 400, Mensagem = "Id precisa ser preenchido" };
+
+            _pessoaRepository.Deletar(id);
+            return new BaseResponse() { StatusCode = 200, Mensagem = "Objeto deletado com sucesso"};
+        }
     }
 
 }

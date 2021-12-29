@@ -1,4 +1,3 @@
-E:\Mesttra\Módulo I - Qeep Moving\Desenvolvimento WEB - 3\Aula 8 - 29052021\repo\Aula\AquiCovidAPI\obj\Debug\netcoreapp3.1\AquiCovidAPI.csproj.AssemblyReference.cache
 E:\Mesttra\Módulo I - Qeep Moving\Desenvolvimento WEB - 3\Aula 8 - 29052021\repo\Aula\AquiCovidAPI\obj\Debug\netcoreapp3.1\AquiCovidAPI.GeneratedMSBuildEditorConfig.editorconfig
 E:\Mesttra\Módulo I - Qeep Moving\Desenvolvimento WEB - 3\Aula 8 - 29052021\repo\Aula\AquiCovidAPI\obj\Debug\netcoreapp3.1\AquiCovidAPI.AssemblyInfoInputs.cache
 E:\Mesttra\Módulo I - Qeep Moving\Desenvolvimento WEB - 3\Aula 8 - 29052021\repo\Aula\AquiCovidAPI\obj\Debug\netcoreapp3.1\AquiCovidAPI.AssemblyInfo.cs
@@ -27,3 +26,4 @@ E:\Mesttra\Módulo I - Qeep Moving\Desenvolvimento WEB - 3\Aula 8 - 29052021\rep
 E:\Mesttra\Módulo I - Qeep Moving\Desenvolvimento WEB - 3\Aula 8 - 29052021\repo\Aula\AquiCovidAPI\obj\Debug\netcoreapp3.1\AquiCovidAPI.dll
 E:\Mesttra\Módulo I - Qeep Moving\Desenvolvimento WEB - 3\Aula 8 - 29052021\repo\Aula\AquiCovidAPI\obj\Debug\netcoreapp3.1\AquiCovidAPI.pdb
 E:\Mesttra\Módulo I - Qeep Moving\Desenvolvimento WEB - 3\Aula 8 - 29052021\repo\Aula\AquiCovidAPI\obj\Debug\netcoreapp3.1\AquiCovidAPI.genruntimeconfig.cache
+E:\Mesttra\Módulo I - Qeep Moving\Desenvolvimento WEB - 3\Aula 8 - 29052021\repo\Aula\AquiCovidAPI\obj\Debug\netcoreapp3.1\AquiCovidAPI.csproj.AssemblyReference.cache

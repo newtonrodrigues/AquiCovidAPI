@@ -11,5 +11,11 @@ namespace AquiCovidAPI.Interface
         List<PessoaResponse> Listar();
 
         PessoaResponse Obter(int id);
+
+        BaseResponse Inserir(PessoaRequest request);
+
+        BaseResponse Atualizar(PessoaRequest request);
+
+        BaseResponse Deletar(int Id);
     }
 }
