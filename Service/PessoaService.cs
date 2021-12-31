@@ -8,8 +8,12 @@ using System.Threading.Tasks;
 
 namespace AquiCovidAPI.Service
 {
-    public class PessoaService : IPessoaService
-    {
+    public class PessoaService : IPessoaService { 
+
+        public int Id = 0;
+        public string Nome = "";
+        public string CPF = "";
+    
         private IPessoaRepository _pessoaRepository;
 
         public PessoaService(IPessoaRepository pessoaRepository)
